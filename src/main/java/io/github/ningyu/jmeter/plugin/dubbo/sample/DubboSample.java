@@ -34,8 +34,10 @@ import org.apache.jmeter.samplers.AbstractSampler;
 import org.apache.jmeter.samplers.Entry;
 import org.apache.jmeter.samplers.Interruptible;
 import org.apache.jmeter.samplers.SampleResult;
-import org.apache.jorphan.logging.LoggingManager;
-import org.apache.log.Logger;
+//import org.apache.jorphan.logging.LoggingManager;
+//import org.apache.log.Logger;
+import org.apache.log4j.Logger;
+
 
 import java.nio.charset.StandardCharsets;
 import java.text.MessageFormat;
@@ -48,7 +50,8 @@ import java.util.stream.Collectors;
  */
 public class DubboSample extends AbstractSampler implements Interruptible {
 
-    private static final Logger log = LoggingManager.getLoggerForClass();
+//    private static final Logger log = LoggingManager.getLoggerForClass();
+    private static Logger log = Logger.getLogger(DubboSample.class);
     private static final long serialVersionUID = -6794913295411458705L;
 
 
